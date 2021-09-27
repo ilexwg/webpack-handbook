@@ -1,31 +1,13 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/foo.js',
 
   output: {
     filename: '[name].js',
+    publicPath: '/dist/',
+    chunkFilename: '[name].js',
   },
 
   mode: 'development',
-
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              localIdentName: '[name]__[local]__[hash:base64:5]',
-            },
-          },
-        ],
-      },
-    ],
-  },
 
   devServer: {
     publicPath: '/dist/',
