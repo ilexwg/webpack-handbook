@@ -1,3 +1,3 @@
-import './style.scss';
+import styles from './style.css';
 
-document.write('app<br>');
+document.write(`<div class="${styles.container}">app app app</div>`);

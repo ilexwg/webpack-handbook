@@ -12,19 +12,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
+              modules: true,
+              localIdentName: '[name]__[local]__[hash:base64:5]',
             },
           },
         ],

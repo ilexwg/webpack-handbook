@@ -1,0 +1,14 @@
+:root {
+  --highlightColor: hwb(190, 35%, 20%);
+}
+
+body {
+  background-color: azure;
+  color: var(--highlightColor);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  color: blue;
+}
