@@ -1,3 +1,5 @@
-document.write(`app.js`);
+import React from 'react';
+import Vue from 'vue';
+import array from 'lodash/array';
 
-import { add } from './bar.js';
+console.log('ok');
